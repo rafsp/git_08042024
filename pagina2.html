@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Site com Flexbox e Grid Layout</title>
+    <style>
+        /* Estilos gerais como as fundações de uma casa */
+        body {
+            font-family: Arial, sans-serif; /* Tipo de fonte para todo o texto */
+            margin: 0; /* Remove margens padrão */
+            padding: 0; /* Remove preenchimentos padrão */
+        }
+        /* Estilos do contêiner flexível como a estrutura principal da casa */
+        .container {
+            display: flex; /* Define um contêiner flexível, como um esqueleto flexível */
+            flex-direction: column; /* Alinha os itens em coluna, como pilares verticais */
+            height: 100vh; /* Ocupa a altura total da tela, como a altura da casa */
+        }
+        /* Estilos do cabeçalho e rodapé como a fachada e a base da casa */
+        header, footer {
+            background-color: #333; /* Cor de fundo como a cor da fachada */
+            color: #fff; /* Cor do texto como a cor das janelas e portas */
+            padding: 10px; /* Espaçamento interno como a estrutura da fachada */
+        }
+        /* Estilos do conteúdo principal usando Grid Layout como o layout interno da casa */
+        main {
+            flex: 1; /* Ocupa o espaço restante verticalmente, como o interior da casa */
+            display: grid; /* Define uma grade, como as divisões internas da casa */
+            grid-template-columns: repeat(3, 1fr); /* Três colunas iguais, como salas na casa */
+            grid-gap: 20px; /* Espaçamento entre as células da grade, como corredores */
+            padding: 20px; /* Espaçamento interno do conteúdo, como mobília nas salas */
+        }
+        /* Estilos dos itens da grade como os móveis nas salas da casa */
+        .item {
+            background-color: #f0f0f0; /* Cor de fundo dos itens, como cores dos móveis */
+            padding: 20px; /* Espaçamento interno dos itens, como conforto dos móveis */
+            border-radius: 5px; /* Borda arredondada dos itens, como design dos móveis */
+        }
+    </style>
+</head>
+<body>
+    <!-- Contêiner principal como o terreno onde a casa está construída -->
+    <div class="container">
+        <!-- Cabeçalho como a fachada da casa -->
+        <header>
+            <h1>Meu Site com Flexbox e Grid Layout</h1>
+            <img src="caminho/para/fachada-da-casa.jpg" alt="Fachada da Casa">
+        </header>
+        <!-- Conteúdo principal em Grid Layout como o layout interno da casa -->
+        <main>
+            <!-- Itens da grade como os móveis nas salas da casa -->
+            <div class="item">
+				<img src="img/mesa_jantar.jpg" alt="Item 3">
+			</div>
+            <div class="item">
+				<img src="img/sofa.jpg" alt="Item 3">
+			</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </main>
+        <!-- Rodapé como a base da casa -->
+        <footer>
+            <p>&copy; 2024 Meu Site</p>
+            <img src="caminho/para/base-da-casa.jpg" alt="Base da Casa">
+        </footer>
+    </div>
+</body>
+</html>
